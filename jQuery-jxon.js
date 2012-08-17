@@ -43,7 +43,7 @@
 		return getJXONTree(this);
 	}
 	
-	$.fn.toXML = function(){
-		return createXML(this);
+	$.fn.toXML = function(json){
+		return createXML(json);
 	}
 	};)(jQuery);
