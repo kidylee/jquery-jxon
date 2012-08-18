@@ -2,7 +2,7 @@
 
 This plugin provides the functionality to create JSON from XML(DOM) with less lost data and vice versa.
 
-##Convert rule
+##Convert sample
 ###XML
 	<?xml version="1.0"?>
 	<!DOCTYPE catalog SYSTEM "catalog.dtd">
@@ -85,6 +85,6 @@ This plugin provides the functionality to create JSON from XML(DOM) with less lo
 	
 ##How to use
 ###DOM(XML) to JSON
-	$("body").toJSON
+	$("body").toJSON()
 ###JSON to DOM(XML)
-	$.toXML({"html":{"keyValue":"body"}})
+	$.toXML($("body").toJSON())
